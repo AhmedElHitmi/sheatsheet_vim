@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Tuto VIM</title>
+   <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<class id="entete"><!-- contenue quelconque --></class>
+
+</head>
+<body>
+  <h1><center>Tutoriel VIM</center></h1>
+  <p>
+  <br/><br/>
+  Vim est un éditeur très puissant qui a trop de commandes pour pouvoir
+  toutes les expliquer dans un cours comme celui-ci, qui est conçu pour en
+  décrire suffisamment afin de vous permettre d'utiliser simplement Vim.
+  <br/><br/><br/>
+  </p>
+ <lu>
+   <li><a href="#dpc"><center><strong>Déplacement du curseur</strong></center></a></li>
+   <li><a href="#esv"><center><strong>Entrée et sortie de Vim</strong></center></a></li>
+   <li><a href="#etf"><center><strong>Edition de texte EFFACEMENT</strong></center></a></li>
+   <li><a href="#eti"><center><strong>Edition de texte INSERTION</strong></center></a></li>
+   <li><a href="#lco"><center><strong>Les commandes et les Objets</strong></center></a></li>
+</lu>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!--  <a href="#entete">remonter</a> -->
+<h2 id="dpc">Déplacement du curseur</h2>
+  <p>
+    Pour déplacer le curseur, appuyez les touches<strong> h j k l</strong> comme indiqué.<br/><br/>
+
+  <strong>Astuce</strong>:  La touche <strong>h</strong> est à gauche et déplace à gauche.<br/>
+   La touche <strong>l</strong> est à droite et déplace à droite.<br/>
+   La touche <strong>j</strong> ressemble à une flèche vers le bas.<br/>
+   La touche <strong>k</strong> déplace vers le haut.<br/>
+  <br/>
+
+
+  <strong>Note:</strong> Si jamais vous doutez de ce que vous venez de taper, appuyez <strong><Échap></strong>
+        pour revenir en mode Normal. Puis retapez la commande que vous vouliez.<br/><br/>
+
+  <strong>Note:</strong> Les touches fléchées devraient également fonctionner. Mais en utilisant
+        <strong>hjkl</strong> vous pourrez vous déplacer beaucoup plus rapidement, une fois que
+        vous aurez pris l'habitude.<br/>
+  </p>
+<br/>
+    <h3><strong>RÉSUMÉ DE LA LEÇON 1</strong></h3>
+<p>
+<strong>1.</strong>       Le curseur se déplace avec les touches fléchées ou les touches <strong>h j k l         ---> </strong>
+               <strong>h</strong> (gauche)	<strong>j</strong> (bas)   <strong>k</strong> (haut) <strong>l</strong> (droite)<br/><br/>
+
+<strong>2.</strong> Pour entrer dans Vim (à l'invite %) tapez:  <strong>vim FICHIER</strong> <Entrée><br/><br/>
+<strong>3.</strong> Pour quitter Vim tapez:  <strong><Échap> :q! </strong><Entrée>  pour perdre tous les changements <br/>
+ou tapez:  <strong><Échap> :wq </strong><Entrée>  pour enregistrer les  changements.<br/><br/>
+
+<strong>4.</strong> Pour effacer un caractère sous le curseur en mode Normal tapez: <strong> x </strong><br/><br/>
+
+<strong>5.</strong> Pour insérer du texte au niveau du curseur en mode Normal tapez: <strong>i</strong> puis tapez le texte   <Échap><br/><br/>
+
+<strong>Note:</strong> Appuyer  <Échap>	vous place en mode Normal ou annule une commande
+partiellement tapée dont vous ne voudriez plus.<br/>
+  </p>
+<br/><br/><br/><br/><br/><br/>
+
+<class="haut" a href="#entete">remonter<style: text-align= "right">
+
+<h2 id="esv">Entrée et sortie de Vim</h2>
+<p>
+  <strong>1.</strong> Appuyez la touche	<Échap>  (pour être sûr d'être en mode Normal).<br/>
+
+  <strong>2.</strong> Tapez:			<strong>:q! <Entrée></strong><br/>
+
+---> Ceci quitte l'éditeur SANS sauver les changements que vous avez faits.
+     Si vous voulez enregistrer les changements et sortir, tapez:
+				<strong>:wq</strong> <Entrée><br/>
+
+  <strong>3</strong>. Lorsque l'invite du 'shell' vous sera présentée, tapez la commande qui
+     vous a amené dans ce tutoriel.<br/>  Cela pourrait être:    <strong>vimtutor <Entrée></strong><br/>
+     Normalement, vous utiliseriez:			    vim tutor <Entrée>
+
+---> 'vim' lance l'éditeur, 'tutor' est le fichier que vous souhaitez éditer.
+</p>
+
+<a href="#entete">remonter</a style: text-align= "right">
+
+<h2 id="etf">Edition de texte EFFACEMENT</h2>
+<p>
+En mode Normal, appuyez  <strong>x</strong>	pour effacer le caractère sous le curseur. <br/><br/>
+Tapez  <strong>dw</strong>  pour effacer jusqu'à la fin d'un mot.<br/>
+
+NOTE: Les lettres  <strong>dw</strong>  apparaîtront sur la dernière ligne de l'écran lors de
+     votre frappe. Si vous avez mal tapé quelque chose, appuyez <Échap> et
+     recommencez.
+</p>
+<h2 id="eti">Edition de texte INSERTION</h2>
+<p>
+	   En mode Normal, appuyez  <strong>i</strong>  pour insérer du texte.<br/><br/>
+			         <h3><strong>RÉSUMÉ DE LA LEÇON 2</strong></h3>
+
+  <strong>1.</strong> Le curseur se déplace avec les touches fléchées ou les touches <strong>h j k l.</strong><br/>
+	 <strong>h (gauche)	j (bas)        k (haut)       l (droite)</strong><br/><br/>
+
+  <strong>2.</strong> Pour entrer dans Vim (à l'invite %) tapez:  <strong>vim FICHIER <Entrée></strong><br/><br/>
+
+  <strong>3.</strong> Pour quitter Vim tapez:  <strong><Échap> :q! <Entrée></strong>  pour perdre tous les changements.<br/>
+		   OU tapez:  <strong><Échap> :wq <Entrée></strong>  pour enregistrer les changements.<br/><br/>
+
+  <strong>4.</strong> Pour effacer un caractère sous le curseur en mode Normal tapez:  <strong>x</strong><br/><br/>
+
+  <strong>5</strong>. Pour insérer du texte au niveau du curseur en mode Normal tapez:
+	 <strong>i   tapez le texte   <Échap></strong><br/><br/><br/><br/>
+
+<strong>NOTE:</strong> Appuyer  <Échap>	vous place en mode Normal ou annule une commande
+      partiellement tapée dont vous ne voudriez plus.
+
+<a href="#entete">remonter</a style: text-align= "right">
+
+<h2 id="lco">Les commandes et les objets</h2>
+<p>
+  Le format de la commande d'effacement  <strong>d</strong>  est le suivant:
+
+	 [nombre]  d  objet	   OU	     d	[nombre]  objet
+  où:
+    nombre - est combien de fois exécuter la commande (optionnel, défaut: 1).
+    d - est la commande d'effacement.
+    objet - est ce sur quoi la commande va opérer (liste ci-dessous).
+
+  Une courte liste d'objets:
+    w - du curseur jusqu'à la fin du mot, y compris l'espace qui suit.
+    e - du curseur jusqu'à la fin du mot, SANS l'espace qui suit.
+    $ - du curseur jusqu'à la fin de la ligne.
+
+NOTE: Pour les aventureux, le seul appui d' objet  en mode Normal, sans
+      commande, déplace le curseur comme indiqué dans la liste des objets.
+</p>
+
+<a href="#entete">remonter</a style: text-align= "right">
+</body>
+</html>
