@@ -2,6 +2,7 @@ body {
  background: #D5DEEC url('fond.png'); /* Fond de page bleu clair, avec une image de fond (bleu clair aussi) */
  font: 14px serif;                    /* Style et taille de la police de la page */
  margin: 1em;
+ /*background-image:url(/home/eha/projets/sheatsheet/tuto-vim/Vimlogo.svg);*/
   }
 
 
