@@ -40,6 +40,10 @@ nav {
 
 }
 
+img : {
+
+align-items: center;
+}
 
    span {
      font-weight: bold;
@@ -49,6 +53,8 @@ nav {
 box-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
  /*border: 1px solid black;
  background: yelow-->;*/
+
+
          }
 
     @media screen and (max-width: 1280px)
